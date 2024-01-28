@@ -1,8 +1,15 @@
+import BrandNames from "./BrandNames";
+import Carousel from "./Carousel";
+import Notice from "./Notice";
+import OurService from "./OurService";
 
 const Home = () => {
     return (
         <div>
-            <h1>This is Home Page</h1>
+            <Carousel></Carousel>
+            <Notice></Notice>
+            <OurService></OurService>
+            <BrandNames></BrandNames>
         </div>
     );
 };

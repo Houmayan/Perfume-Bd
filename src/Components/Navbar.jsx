@@ -15,14 +15,14 @@ const Navbar = () => {
           {/* left side mail */}
           <div className="flex items-center  gap-1">
             <MdEmail color="black" />
-            <h1 className="text-base font-normal text-[#1A120B]">
+            <h1 className="font-roboto text-base font-normal text-[#1A120B]">
               support@perfumebd.shop
             </h1>
           </div>
 
           <div className="flex gap-1 items-center">
             <IoIosCall />
-            <p className="text-base font-normal text-[#1A120B]">
+            <p className="font-roboto text-base font-normal text-[#1A120B]">
               <span>Hotline:</span> 01857-212980
             </p>
           </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
         <div className="flex gap-1">
           <img src={percenctSvg} alt="" />
-          <h3 className="text-[#3C2A21] font-semibold text-base">
+          <h3 className="font-rightous text-[#3C2A21] font-semibold text-base">
             100% AUTHENTIC
           </h3>
         </div>
@@ -39,12 +39,11 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           {/* <h4>Store Location</h4> */}
           <NavLink>
-            <h1 className="text-[#1A120B]">Store Location</h1>
+            <h1 className="text-[#1A120B] font-roboto">Store Location</h1>
           </NavLink>
           <div className="h-4 w-[2px] bg-black"></div>
           <NavLink>
-            {" "}
-            <h1 className="text-[#1A120B]">Contact Us</h1>
+            <h1 className="text-[#1A120B] font-roboto">Contact Us</h1>
           </NavLink>
           <FaYoutube size={25} />
           <FaLinkedin size={25} />

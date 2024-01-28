@@ -13,8 +13,8 @@ const MainNavbar = () => {
     </>
 
   return (
-    <div className="navbar justify-between bg-[#efe2d2] rounded-xl mt-1 px-5">
-      <div className="gap-4">
+    <div className="navbar justify-between bg-[#efe2d2] rounded-xl mt-1 px-5 ">
+      <div className="gap-4 flex-0">
         {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
         <img className="h-12" src={logo} alt="perfumeBd Logo" />
         <ul className="menu menu-horizontal px-1">
@@ -50,22 +50,22 @@ const MainNavbar = () => {
         </ul>
       </div> */}
 
-      <div className="form-control">
+      <div className="form-control flex-1 flex-row justify-center ">
         <input
           type="text"
           placeholder="Perfume Oil"
-          className="input input-bordered  md:w-auto"
+          className="input input-bordered !rounded-r-none w-2/3"
         />
-        {/* <GoSearch className="absolute right-[540px] top-[85px] p-[2px] w-10 h-7 bg-black rounded-md " size={23} color="white"/> */}
+        <button><GoSearch className="  p-2 bg-black rounded-l-none rounded-r-lg w-[45px] h-[46px]"  color="white"/></button>
 
       </div>
 
-      <div className="flex gap-5">
+      <div className="flex gap-5 flex-0">
       <IoMdHeart  size={30} />
       <IoMdCart size={30}/>
       <IoPerson  size={30}/>
 
-        <button className="btn bg-[#3C2A21] text-[#FFFCF6]"> custom order</button>
+        <button className="btn bg-[#3C2A21] text-[#FFFCF6] uppercase font-rightous"> custom order</button>
       </div>
     </div>
   );

@@ -8,8 +8,7 @@ const Header = () => {
     <div>
       <Navbar></Navbar>
       <MainNavbar></MainNavbar>
-      <Carousel></Carousel>
-      <Notice></Notice>
+      
     </div>
   );
 };
