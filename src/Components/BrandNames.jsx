@@ -1,4 +1,5 @@
-import React from "react";
+import { FaArrowRight } from "react-icons/fa";
+
 import ck from "../assets/brandImage/ck.svg";
 import armani from "../assets/brandImage/armani.svg";
 import chanel from "../assets/brandImage/channel.svg";
@@ -10,7 +11,7 @@ import bvlgari from "../assets/brandImage/bvlgari.svg";
 import gucci from "../assets/brandImage/gucci.svg";
 import versace1 from "../assets/brandImage/versace.svg";
 
-const BrandNames = () => {
+const BrandNames = () => { 
   return (
     <div className="text-center mt-24">
       {/* Title and Slogan */}
@@ -25,15 +26,8 @@ const BrandNames = () => {
       
         <div className="py-14">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="max-w-xl mx-auto text-center">
-                    <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        Who's using Float UI?
-                    </h3>
-                    <p className="text-gray-600 mt-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim nibh nisl, vel egestas magna rhoncus at. Nunc elementum efficitur tortor in laoreet.
-                    </p>
-                </div>
-                <div className="mt-12 flex justify-center">
+                
+                <div className="mt-7 flex justify-center">
                     <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-5 justify-center mx-auto items-center">
 
                         {/* LOGO 1 */}
@@ -77,6 +71,7 @@ const BrandNames = () => {
         </div>
 
       </div>
+      <button className="btn bg-[#D5CEA3] rounded-md">More Brand <FaArrowRight /></button>
     </div>
   );
 };

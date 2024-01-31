@@ -21,7 +21,7 @@ const MainNavbar = () => {
           <li>
             <details>
               <summary className="font-medium">Categories</summary>
-              <ul className="p-2 space-y-4 bg-[#efe2d2] rounded-t-none">
+              <ul className="p-2 space-y-4 bg-[#efe2d2] rounded-t-none z-10">
                 {navLinks}
                 
               </ul>
