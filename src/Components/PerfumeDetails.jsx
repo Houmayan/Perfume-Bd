@@ -2,9 +2,8 @@ import { FaBangladeshiTakaSign } from "react-icons/fa6";
 const PerfumeDetails = ({ detail }) => {
   return (
     <div className="card bg-[#efe2d2] p-4 w-[300px] h-[450px]  shadow-xl">
-      <figure className="flex gap-2 bg-white w-full h-[250px]">
-        
-        <img
+      
+        {detail.image2 ? <figure className="flex gap-2 bg-white w-full h-[250px]"><img
           src={detail.image1}
           alt="Shoes"
           className="object-cover w-[150px] h-full"
@@ -15,8 +14,13 @@ const PerfumeDetails = ({ detail }) => {
           src={detail.image2}
           alt="Shoes"
           className="object-cover w-[150px] h-full "
-        />
-      </figure>
+        /></figure> : <figure className="flex gap-2 bg-white w-full h-[250px]"> <img
+        src={detail.image1}
+        alt="Shoes"
+        className="object-cover w-full h-full"
+      /></figure>}
+        
+      
       <div className=" space-y-2 mt-2">
         <h2 className="card-title font-rightous font-normal">
           Bleu De Chanel
