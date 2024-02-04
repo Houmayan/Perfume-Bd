@@ -26,7 +26,7 @@ const perfumeDetais = [
   {
     id: 2,
     image1: pb,
-    // "image2" : coolLady,
+    "image2" : coolLady,
     name: "Bleu De Chanel",
     variant: "indian",
     type: "oil",
@@ -37,7 +37,7 @@ const perfumeDetais = [
   {
     id: 3,
     image1: blu,
-    image2: blu,
+    // image2: blu,
     name: "Bleu De Chanel",
     variant: "indian",
     type: "oil",
@@ -155,8 +155,8 @@ const PerfumeCard = () => {
   console.log('button working',load);
   }
   return (
-    <div className="mt-24 ">
-      <div className="brands-name text-center">
+    <div className="mt-24 text-center">
+      <div className="brands-name ">
         <h1 className="font-merienda text-6xl">Fragrance Frenzy</h1>
         <p className="font-rightous mt-3">
           Discover the Aroma Sensation with Our Most Popular Perfumes!
@@ -165,12 +165,12 @@ const PerfumeCard = () => {
       {/* perfume card */}
 
       {/* try */}
-      <div className="grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-2 lg:gap-5 mt-12">
+      <div className="grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-2 lg:gap-5 mt-12 text-left">
         {perfumeDetais.slice(0,load).map((detail) => (
           <PerfumeDetails key={detail.id} detail={detail}></PerfumeDetails>
         ))}
       </div>
-      <button onClick={handleLoadMore} className={`btn bg-[#d5cea3] font-rightous mt-12 ${load===8 ? 'visible':'hidden'}`}>Load More <GiArmoredBoomerang size={20}/></button>
+      <button onClick={handleLoadMore} className={`btn bg-[#d5cea3] font-rightous mt-12 ${load===8 ? 'visible':'hidden'} `}>Load More <GiArmoredBoomerang size={20}/></button>
     </div>
   );
 };

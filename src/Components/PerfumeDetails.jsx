@@ -6,18 +6,18 @@ const PerfumeDetails = ({ detail }) => {
         {detail.image2 ? <figure className="flex gap-2 bg-white w-full h-[250px]"><img
           src={detail.image1}
           alt="Shoes"
-          className="object-cover w-[150px] h-full"
+          className="object-contain w-[150px] h-full"
         />
         {/* singlwe image w and h full */}
         {/* {detail.image2 ? } */}
         <img
           src={detail.image2}
           alt="Shoes"
-          className="object-cover w-[150px] h-full "
+          className="object-contain w-[150px] h-full "
         /></figure> : <figure className="flex gap-2 bg-white w-full h-[250px]"> <img
         src={detail.image1}
         alt="Shoes"
-        className="object-cover w-full h-full"
+        className="object-contain w-full h-full"
       /></figure>}
         
       

@@ -5,6 +5,8 @@ import Category from "./Category";
 import Notice from "./Notice";
 import OurService from "./OurService";
 import PerfumeCard from "./PerfumeCard";
+import PhotoGrid from "./PhotoGrid";
+import Quotes from "./Quotes";
 import Review from "./Review";
 
 const Home = () => {
@@ -18,6 +20,8 @@ const Home = () => {
             <Category></Category>
             <Review></Review>
             <About></About>
+            <PhotoGrid></PhotoGrid>
+            <Quotes></Quotes>
         </div>
     );
 };

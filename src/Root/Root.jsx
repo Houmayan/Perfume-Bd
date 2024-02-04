@@ -1,5 +1,6 @@
 import { Outlet, ScrollRestoration } from 'react-router-dom';
 import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
 const Root = () => {
     return (
@@ -8,7 +9,7 @@ const Root = () => {
                 <Header></Header>
                 <Outlet></Outlet>
                 <ScrollRestoration></ScrollRestoration>
-            
+                <Footer></Footer>
         </div>
     );
 };
