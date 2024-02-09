@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="mt-3 p-3">
       {/* Information Nav */}
-      <div className="flex justify-between md:flex-row flex-col">
+      <div className="hidden sm:flex justify-between md:flex-row flex-col">
         <div className=" flex gap-3 md:flex-row flex-col">
           {/* left side mail */}
           <div className="flex items-center  gap-1">
