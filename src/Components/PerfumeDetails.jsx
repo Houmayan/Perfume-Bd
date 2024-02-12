@@ -1,7 +1,7 @@
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 const PerfumeDetails = ({ detail }) => {
   return (
-    <div className="card bg-[#efe2d2] p-4 w-[300px] h-[450px]  shadow-xl">
+    <div className="card mx-auto bg-[#efe2d2] p-4 w-[300px] h-[450px]  shadow-xl">
       
         {detail.image2 ? <figure className="flex gap-2 bg-white w-full h-[250px]"><img
           src={detail.image1}

@@ -95,8 +95,8 @@ const Footer = () => {
      
   </>
   return (
-    <footer className="pt-10 bg-[#f2eee2] mt-[100px] rounded-[15px]">
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
+    <footer className="pt-10 bg-[#f2eee2] mx-2 mt-[100px] rounded-[15px]">
+      <div className="max-w-screen-xl mx-auto px-4 text-gray-600  md:px-8 lg:px-8">
 
         {/* Top part */}
         <div className="flex flex-col md:flex-row lg:flex-row gap-12 justify-between sm:flex ">

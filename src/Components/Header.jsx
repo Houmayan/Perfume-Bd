@@ -1,3 +1,4 @@
+
 import MainNavbar from "./MainNavbar";
 import Navbar from "./Navbar";
 
@@ -6,6 +7,7 @@ const Header = () => {
     <div>
       <Navbar></Navbar>
       <MainNavbar></MainNavbar>
+      
       
     </div>
   );

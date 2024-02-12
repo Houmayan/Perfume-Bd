@@ -2,28 +2,33 @@ import { GoSearch } from "react-icons/go";
 import { IoMdHeart } from "react-icons/io";
 import { IoMdCart } from "react-icons/io";
 import { IoPerson } from "react-icons/io5";
-import logo from "../assets/logo.svg"
-import { NavLink } from "react-router-dom";
+import menuBtn from "../assets/menu-btn.svg";
+import logo from "../assets/logo.svg";
+import { Link, NavLink } from "react-router-dom";
 
 const MainNavbar = () => {
-
-    const navLinks = <>
-    <li><NavLink>ja icca</NavLink></li>
-    <li><NavLink>Ja Icca 2</NavLink></li>
+  const navLinks = (
+    <>
+      <li>
+        <NavLink>ja icca</NavLink>
+      </li>
+      <li>
+        <NavLink>Ja Icca 2</NavLink>
+      </li>
     </>
+  );
 
   return (
     <div className="navbar justify-between bg-[#efe2d2] rounded-xl mt-1 px-5 ">
       <div className="gap-4 flex-0">
         {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
         <img className="h-12" src={logo} alt="perfumeBd Logo" />
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu hidden sm:flex md:visible lg:visible menu-horizontal px-1">
           <li>
             <details>
               <summary className="font-medium">Categories</summary>
               <ul className="p-2 space-y-4 bg-[#efe2d2] rounded-t-none z-10">
                 {navLinks}
-                
               </ul>
             </details>
           </li>
@@ -50,22 +55,48 @@ const MainNavbar = () => {
         </ul>
       </div> */}
 
-      <div className="form-control flex-1 flex-row justify-center ">
+      <div className="hidden sm:flex md:visible lg:visible flex-1 flex-row justify-center ">
         <input
           type="text"
           placeholder="Perfume Oil"
           className="input input-bordered !rounded-r-none w-2/3"
         />
-        <button><GoSearch className="  p-2 bg-black rounded-l-none rounded-r-lg w-[45px] h-[46px]"  color="white"/></button>
-
+        <button>
+          <GoSearch
+            className="  p-2 bg-black rounded-l-none rounded-r-lg w-[45px] h-[46px]"
+            color="white"
+          />
+        </button>
       </div>
 
-      <div className="flex gap-5 flex-0">
-      <IoMdHeart  size={30} />
-      <IoMdCart size={30}/>
-      <IoPerson  size={30}/>
+      <div className="hidden sm:flex md:visible lg:visible gap-5 flex-0">
+        <IoMdHeart size={30} />
+        <IoMdCart size={30} />
+        <IoPerson size={30} />
 
-        <button className="btn bg-[#3C2A21] text-[#FFFCF6] uppercase font-rightous"> custom order</button>
+        <button className="btn bg-[#3C2A21] text-[#FFFCF6] uppercase font-rightous">
+          custom order
+        </button>
+      </div>
+      {/* burger */}
+      <div className="visible md:hidden lg:hidden">
+        <div className="dropdown ">
+          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+            <img src={menuBtn} alt="" />
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] absolute -right-5  shadow bg-base-100 rounded-box s"
+          >
+            {navLinks}
+            <li>
+              <Link>Custom Order</Link>
+            </li>
+            <li>
+              <a>About</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

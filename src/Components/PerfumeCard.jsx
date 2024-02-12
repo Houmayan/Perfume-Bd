@@ -157,15 +157,15 @@ const PerfumeCard = () => {
   return (
     <div className="mt-24 text-center">
       <div className="brands-name ">
-        <h1 className="font-merienda text-6xl">Fragrance Frenzy</h1>
-        <p className="font-rightous mt-3">
+        <h1 className="font-merienda text-2xl lg:text-6xl md:text-5xl">Fragrance Frenzy</h1>
+        <p className="font-rightous text-xs md:text-sm lg:text-base mt-3">
           Discover the Aroma Sensation with Our Most Popular Perfumes!
         </p>
       </div>
       {/* perfume card */}
 
       {/* try */}
-      <div className="grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-2 lg:gap-5 mt-12 text-left">
+      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-2 lg:gap-5 mt-12 text-left">
         {perfumeDetais.slice(0,load).map((detail) => (
           <PerfumeDetails key={detail.id} detail={detail}></PerfumeDetails>
         ))}

@@ -16,14 +16,13 @@ const BrandNames = () => {
     <div className="text-center mt-24">
       {/* Title and Slogan */}
       <div className="brands-name">
-        <h1 className="font-merienda text-6xl">Scented Elegance</h1>
-        <p className="font-rightous mt-3">
+        <h1 className="font-merienda  text-2xl lg:text-6xl md:text-5xl">Scented Elegance</h1>
+        <p className="font-rightous text-xs md:text-sm lg:text-base mt-3">
           Dive into Luxury with Our Top-Notch Perfume Collection!
         </p>
       </div>
       {/* logos */}
       <div>
-      
         <div className="py-14">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 
@@ -31,35 +30,35 @@ const BrandNames = () => {
                     <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-5 justify-center mx-auto items-center">
 
                         {/* LOGO 1 */}
-                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-56">
+                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-36 md:w-36 lg:w-48">
                         <img className="mx-auto items-center"  src={ck} alt="" />
                       </li>
-                      <li className="flex px-10  rounded-lg bg-[#efe2d2] h-28 w-56">
+                      <li className="flex px-10  rounded-lg bg-[#efe2d2] h-28 w-36 md:w-36 lg:w-48">
                         <img className="mx-auto items-center" src={armani} alt="" />
                       </li>
-                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-56">
+                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-36 md:w-36 lg:w-48">
                         <img className="mx-auto items-center" src={dior} alt="" />
                       </li>
-                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-56">
+                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-36 md:w-36 lg:w-48">
                         <img className="mx-auto items-center" src={chanel} alt="" />
                       </li>
-                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-56">
+                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-36 md:w-36 lg:w-48">
                         <img className="mx-auto items-center" src={boss} alt="" />
                       </li>
-                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-56">
+                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-36 md:w-36 lg:w-48">
                         <img className="mx-auto items-center" src={mont} alt="" />
                       </li>
-                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-56">
+                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-36 md:w-36 lg:w-48">
                         <img className="mx-auto items-center" src={dolce} alt="" />
                       </li>
-                      <li className="flex px-10 rounded-lg flex-col justify-center items-center bg-[#efe2d2] h-28 w-56">
+                      <li className="flex px-10 rounded-lg flex-col justify-center items-center bg-[#efe2d2] h-28 w-36 md:w-36 lg:w-48">
                         <img className=" mx-auto " src={versace1} alt="" />
                        
                       </li>
-                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-56">
+                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-36 md:w-36 lg:w-48">
                         <img className="mx-auto items-center" src={bvlgari} alt="" />
                       </li>
-                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-56">
+                      <li className="flex px-10 rounded-lg bg-[#efe2d2] h-28 w-36 md:w-36 lg:w-48">
                         <img className="mx-auto items-center" src={gucci} alt="" />
                       </li>
 
