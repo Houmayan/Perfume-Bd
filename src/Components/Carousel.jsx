@@ -94,11 +94,11 @@ const Carousel = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="flex gap-2 mt-3">
+    <div className="flex flex-col md:flex-col lg:flex-row gap-2 mt-3">
       <Swiper
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper rounded-lg grow w-[600px]"
+        className="mySwiper rounded-lg grow w-full md:w-full lg:w-[600px]"
       >
         <SwiperSlide className="">
           <img src={slide1} alt="" />
@@ -120,7 +120,7 @@ const Carousel = () => {
         </SwiperSlide>
       </Swiper>
       
-      <div className='w-[600px]  grow-0 rounded-lg '>
+      <div className='w-[600px] hidden sm:flex md:visible lg:visible flex-col rounded-lg '>
         <div className='h-2/3 flex bg-red-600'>
           <div className="w-1/2 flex justify-center items-center ">
             <img className='object-contain' src={pb} alt="" />

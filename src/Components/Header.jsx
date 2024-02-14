@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <div>
+    <div className="">
       <Navbar></Navbar>
       <MainNavbar></MainNavbar>
       

@@ -6,7 +6,8 @@ import "swiper/css";
 import "swiper/css/effect-creative";
 import "../review.css"
 // import { EffectCreative } from "swiper/modules";
-import { FaChevronRight } from "react-icons/fa";
+import { MdOutlineSwipeRight } from "react-icons/md";
+
 import client1 from "../assets/client-1-svg.svg";
 import client2 from "../assets/client-2-svg.svg";
 import client3 from "../assets/client-3-svg.svg";
@@ -19,7 +20,7 @@ const Review = () => {
         Rave Reviews from Our Scent-Sational Clients!
       </p>
 
-      <div className="flex items-center justify-start">
+      <div className="">
         <Swiper watchSlidesProgress={true} spaceBetween={30} className="mySwiper mt-7 w-10/12">
           <SwiperSlide className="px-7 py-5 flex flex-col">
 
@@ -398,7 +399,7 @@ const Review = () => {
           </SwiperSlide>
 
         </Swiper>
-        <FaChevronRight size={30} />
+        <MdOutlineSwipeRight className="mx-auto mt-5 hover:rotate-90 hover:ease-in hover:duration-300" size={30} />
       </div>
     </div>
   );
