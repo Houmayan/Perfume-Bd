@@ -8,7 +8,6 @@ import PerfumeCard from "./PerfumeCard";
 import PhotoGrid from "./PhotoGrid";
 import Quotes from "./Quotes";
 import Review from "./Review";
-
 const Home = () => {
     return (
         <div>

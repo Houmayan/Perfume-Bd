@@ -36,7 +36,7 @@ const PerfumeDetails = ({ detail }) => {
             1200 <FaBangladeshiTakaSign />
           </h1>
           <h1 className="flex items-center">
-            {" "}
+            
             <strike>1500</strike> <FaBangladeshiTakaSign />
           </h1>
         </div>

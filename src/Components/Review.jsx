@@ -399,7 +399,7 @@ const Review = () => {
           </SwiperSlide>
 
         </Swiper>
-        <MdOutlineSwipeRight className="mx-auto mt-5 hover:rotate-90 hover:ease-in hover:duration-300" size={30} />
+        <MdOutlineSwipeRight className="mx-auto mt-5 hover:rotate-90 hover:ease-in hover:duration-300 hover:h-10 hover:w-10 h-8 w-8"  />
       </div>
     </div>
   );

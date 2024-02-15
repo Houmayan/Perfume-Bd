@@ -10,7 +10,7 @@ const MainNavbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink>ja icca</NavLink>
+        <NavLink >ja icca</NavLink>
       </li>
       <li>
         <NavLink>Ja Icca 2</NavLink>
@@ -27,8 +27,8 @@ const MainNavbar = () => {
           <li>
             <details>
               <summary className="font-medium">Categories</summary>
-              <ul className="p-2 space-y-4 bg-[#efe2d2] rounded-t-none z-10">
-                {navLinks}
+              <ul className="p-2 space-y-4 !bg-[#efe2d2] rounded-t-none z-10">
+              <Link className="!white">{navLinks}</Link>
               </ul>
             </details>
           </li>
@@ -86,9 +86,9 @@ const MainNavbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] absolute -right-5  shadow bg-base-100 rounded-box s"
+            className="menu menu-sm dropdown-content mt-3 z-[1] absolute -right-5 !bg-[#efe2d2] shadow  rounded-box s"
           >
-            {navLinks}
+            <Link className="!white">{navLinks}</Link>
             <li>
               <Link>Custom Order</Link>
             </li>

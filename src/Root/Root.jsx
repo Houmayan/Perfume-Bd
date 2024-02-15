@@ -1,6 +1,7 @@
 import { Outlet, ScrollRestoration } from 'react-router-dom';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+// import vector from "../assets/vector.svg";
 
 const Root = () => {
     return (
@@ -10,6 +11,7 @@ const Root = () => {
                 <Outlet></Outlet>
                 <ScrollRestoration></ScrollRestoration>
                 <Footer></Footer>
+
         </div>
     );
 };

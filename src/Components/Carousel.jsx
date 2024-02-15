@@ -1,12 +1,14 @@
-import pb from '../assets/perfume/pb-product.svg';
-import gucci from '../assets/perfume/gucci-guilty-img.svg';
+import pb from "../assets/perfume/pb-product.svg";
+import gucci from "../assets/perfume/gucci-guilty-img.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import slide1 from "../assets/slide-1.svg";
 // Import Swiper styles
+import announcement from "../assets/announcement.svg";
 import "swiper/css";
 import "swiper/css/navigation";
 
 import "../carousel.css";
+import { FaBangladeshiTakaSign } from "react-icons/fa6";
 
 // import required modules
 import { Navigation } from "swiper/modules";
@@ -17,7 +19,7 @@ const Carousel = () => {
     //     <div id="slide1" className="carousel-item  relative w-full ">
     //       <img
     //         src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-    //         className="object-cover"
+    //         className="object-contain"
     //       />
     //       <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
     //         <a href="#slide4" className="btn  border-none bg-transparent hover:bg-transparent">
@@ -75,7 +77,7 @@ const Carousel = () => {
     //   <div className="flex flex-col">
     //     <div className="card flex-row w-96 bg-base-100 shadow-xl flex-1">
     //       <figure>
-    //         <img className="object-cover"
+    //         <img className="object-contain"
     //           src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
     //           alt="Shoes"
     //         />
@@ -101,42 +103,53 @@ const Carousel = () => {
         className="mySwiper rounded-lg grow w-full md:w-full lg:w-[600px]"
       >
         <SwiperSlide className="">
-          <img src={slide1} alt="" />
+          <img className="" src={slide1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide1} alt="" />
+          <img className="" src={slide1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide1} alt="" />
+          <img className="" src={slide1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide1} alt="" />
+          <img className="" src={slide1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide1} alt="" />
+          <img className="" src={slide1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide1} alt="" />
+          <img className="" src={slide1} alt="" />
         </SwiperSlide>
       </Swiper>
-      
-      <div className='w-[600px] hidden sm:flex md:visible lg:visible flex-col rounded-lg '>
-        <div className='h-2/3 flex bg-red-600'>
-          <div className="w-1/2 flex justify-center items-center ">
-            <img className='object-contain' src={pb} alt="" />
-            {/* <img className='object-contain' src={gucci} alt="" /> */}
+
+      <div className="w-[600px] hidden sm:flex md:visible lg:visible flex-col rounded-lg ">
+        <div className="h-[300px] flex bg-[#efe2d2]">
+          <div className="w-[300px] flex justify-center items-center ">
+            <img className="object-contain w-[100px] " src={pb} alt="" />
+            <img className="object-contain w-[100px] " src={gucci} alt="" />
           </div>
-          <div className="w-1/2">
-          <h2 className="card-title font-rightous font-normal">
-          Bleu De Chanel
-          {/* <div className="badge badge-secondary">NEW</div> */}
-        </h2>
-        <p className="font-roboto  text-[#1A120]">Variant: Indian</p>
-        <p className="font-roboto text-[#1A120]">Type: Oil</p>
-        <p className="font-roboto text-[#1A120]">Volume: 30ml</p>
+          <div className="">
+            <h2 className="card-title font-rightous font-normal text-nowrap">
+              Guccy Guilty
+              {/* <div className="badge badge-secondary">NEW</div> */}
+            </h2>
+            <p className="font-roboto  text-[#1A120]">Variant: Indian</p>
+            <p className="font-roboto text-[#1A120]">Type: Oil</p>
+            <p className="font-roboto text-[#1A120]">Volume: 30ml</p>
+            <div className="flex gap-3 font-rightous">
+          <h1 className="flex items-center">
+            1200 <FaBangladeshiTakaSign />
+          </h1>
+          <h1 className="flex items-center">
+            
+            <strike>1500</strike> <FaBangladeshiTakaSign />
+          </h1>
+        </div>
           </div>
         </div>
-        <div className='h-1/3 bg-green-600'></div>
+        <div className="h-[200px] ">
+          <img className="h-full" src={announcement} alt="" />
+        </div>
       </div>
     </div>
   );
